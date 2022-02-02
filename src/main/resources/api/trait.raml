@@ -1,0 +1,23 @@
+#%RAML 1.0 Trait
+responses:
+  200:
+        body:
+          application/json:
+             example:
+              {
+                "message": "Hello Tobe, welcome to Mulsoft, today is 2021-06-16"
+              }
+  404:
+        body:
+          application/json:
+            example:
+              {
+                 "message": "No person Found"
+             }
+  500:
+        body:
+          application/json:
+            example:
+              {
+                "message": "Internal Server Error"
+              }				  

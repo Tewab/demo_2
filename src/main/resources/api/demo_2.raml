@@ -1,0 +1,24 @@
+#%RAML 1.0
+title: demo_2
+description: demo_2 api
+baseUri: http://localhost:8081/demo_2/v1
+version: 1.0
+traits:
+  mytrait: !include trait.raml
+/pname:
+  get: 
+    queryParameters:
+      name:
+        type: string
+        description: the name of the person
+        minLength: 3
+        maxLength: 15
+        required: true
+        example: Tobe
+      connection-Type:
+        description: multiple connection is allowed for this rest api
+        type: string
+        required: false
+    is:
+      - mytrait
+      

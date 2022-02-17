@@ -43,7 +43,7 @@ attributes.queryParams.name
 output application/json
 ---
 
-  {message: "Hello " ++ vars.name ++ ", welcome to Mulsoft, today is " ++ now() as String {format: "y-MM-dd"}}]]></ee:set-payload>
+  {message: "Hello " ++ vars.name ++ ", welcome to Tobe's Mulsoft, today is " ++ now() as String {format: "y-MM-dd"}}]]></ee:set-payload>
             </ee:message>
         </ee:transform>
     </flow>
